@@ -1,0 +1,59 @@
+/* App.css */
+.App {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px 0;
+  color: white;
+}
+
+.Chart-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.d3-component {
+  display: block; /* Ensures that the SVG is not inline */
+  width: 100%; /* Full width to maximize space */
+  max-width: 995px; /* Max width can be set as per your design preference */
+  height: auto; /* Height is set automatically to maintain aspect ratio */
+  margin: auto; /* Center the SVG in the container */
+  
+}
+
+/* Style for the text labels to ensure they are readable against different background colors */
+text {
+  pointer-events: none;
+  font-weight: bold;
+  fill: white;
+  alignment-baseline: middle;
+  text-anchor: middle;
+  font-size: smaller; /* Adjust the font size if the text is too large/small */
+}
+
+
+
+/* Asset Allocation Chart specific styles */
+/* AssetAllocation starts from here */
+
+.chart-container {
+  width: 70vw; /* Adjusted width */
+  height: 70vh; /* Adjusted height */
+  margin: auto; /* Center the chart in the container */
+
+  
+}
+
+/* Responsive settings for the Asset Allocation Chart */
+@media (max-width: 768px) {
+  .chart-container {
+    width: 80%; /* Adjust based on your preference for smaller screens */
+    height: auto; /* Adjust height for smaller screens */
+  }
+}
+
